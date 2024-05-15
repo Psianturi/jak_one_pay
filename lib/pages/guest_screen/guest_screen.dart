@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gradient_borders/box_borders/gradient_box_border.dart';
 import 'package:provider/provider.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import '../../common/common.dart';
-import '../../common/fonts.dart';
-import '../../model/destination_model.dart';
-import '../../widgets/custom_fab.dart';
+import '../../models/destination_model.dart';
+import '../../utils/const/common.dart';
+import '../../utils/const/fonts.dart';
+import '../../utils/widgets/custom_fab.dart';
 import '../home_screen/navbar_menu.dart';
 
 class GuestScreen extends StatefulWidget {

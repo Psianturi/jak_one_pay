@@ -3,15 +3,15 @@ import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:gradient_borders/box_borders/gradient_box_border.dart';
+import 'package:jak_one_pay/models/datas.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-import '../../common/common.dart';
-import '../../common/fonts.dart';
-import '../../model/common_data.dart';
-import '../../widgets/custom_card_place.dart';
-import '../../widgets/custom_event_card.dart';
-import '../../widgets/custom_fab.dart';
-import '../../widgets/sub_header_with_title.dart';
+import '../../utils/const/common.dart';
+import '../../utils/const/fonts.dart';
+import '../../utils/widgets/custom_card_place.dart';
+import '../../utils/widgets/custom_event_card.dart';
+import '../../utils/widgets/custom_fab.dart';
+import '../../utils/widgets/sub_header_with_title.dart';
 import 'account_and_balance_bar.dart';
 
 
@@ -285,7 +285,7 @@ class HomeScreen extends StatelessWidget {
       ],
       backgroundColor: kPrimaryColor,
       title: Image.asset(
-        'assets/images/jakone_pay_logo.png',
+        'assets/images/jak_one_center.png',
         height: 45,
       ),
     );

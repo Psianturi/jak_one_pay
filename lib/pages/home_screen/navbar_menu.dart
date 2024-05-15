@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../common/common.dart';
+import '../../utils/const/common.dart';
 import 'home_screen.dart';
 
 

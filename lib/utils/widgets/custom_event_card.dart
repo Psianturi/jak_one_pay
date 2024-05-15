@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../common/common.dart';
-import '../common/fonts.dart';
+import '../const/common.dart';
+import '../const/fonts.dart';
+
 
 
 class HomeEventCard extends StatelessWidget {

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../../common/common.dart';
-import '../../common/fonts.dart';
-import '../../widgets/custom_painter_appbar_home.dart';
+import '../../utils/const/common.dart';
+import '../../utils/const/fonts.dart';
+import '../../utils/widgets/custom_painter_appbar_home.dart';
+
 
 
 class AccountAndBalance extends SliverPersistentHeaderDelegate {

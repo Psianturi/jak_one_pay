@@ -2,8 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
-import '../common/common.dart';
+import '../utils/const/common.dart';
 import 'guest_screen/guest_screen.dart';
 
 
@@ -18,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     Timer(
-        const Duration(seconds: 5),
+        const Duration(seconds: 6),
         () => Navigator.pushReplacement(context,
             MaterialPageRoute(builder: (context) => const GuestScreen())));
     super.initState();

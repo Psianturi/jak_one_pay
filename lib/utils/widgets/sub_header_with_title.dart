@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../common/common.dart';
-import '../common/fonts.dart';
-
+import '../const/common.dart';
+import '../const/fonts.dart';
 
 class SubHeaderWithTitle extends StatelessWidget {
   const SubHeaderWithTitle({
@@ -75,6 +74,7 @@ class SubHeaderWithTitle extends StatelessWidget {
   }
 }
 
+//Custom card place
 class SubHeaderNoIcon extends StatelessWidget {
   const SubHeaderNoIcon({
     super.key,

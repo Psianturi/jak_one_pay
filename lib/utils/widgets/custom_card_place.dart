@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import '../const/common.dart';
+import '../const/fonts.dart';
 
-import '../common/common.dart';
-import '../common/fonts.dart';
 
+//Ancol entrance & monumen nasional
 class HomePlaceCard extends StatelessWidget {
   const HomePlaceCard({
     super.key,

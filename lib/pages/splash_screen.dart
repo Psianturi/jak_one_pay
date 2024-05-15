@@ -18,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     Timer(
-        const Duration(seconds: 4),
+        const Duration(seconds: 5),
         () => Navigator.pushReplacement(context,
             MaterialPageRoute(builder: (context) => const GuestScreen())));
     super.initState();
@@ -43,18 +43,20 @@ class _SplashScreenState extends State<SplashScreen> {
           child: Stack(
             children: [
               Center(
+                child: Image.asset(
+                  'assets/images/jak_one_center.png',
+                  width: 282,
+                ),
+              ),
+
+              Center(
                 child: SvgPicture.asset(
                   'assets/images/splash_screen_bg.svg',
                   fit: BoxFit.cover,
                   height: double.infinity,
                 ),
               ),
-              Center(
-                child: Image.asset(
-                  'assets/images/jakone_pay_logo.png',
-                  width: 285,
-                ),
-              ),
+
               Positioned(
                   left: 16,
                   right: 16,

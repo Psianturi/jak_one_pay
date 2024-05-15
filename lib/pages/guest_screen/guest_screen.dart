@@ -5,7 +5,6 @@ import 'package:provider/provider.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import '../../common/common.dart';
 import '../../common/fonts.dart';
-import '../../controller/localizations_provider.dart';
 import '../../model/destination_model.dart';
 import '../../widgets/custom_fab.dart';
 import '../home_screen/navbar_menu.dart';
@@ -57,7 +56,6 @@ class _LandingScreenState extends State<GuestScreen> {
         title: "Monumen Nasional",
         description: "Explore Jakarta with Jakarta Tourist Pass.",
       ),
-
     ];
     return Scaffold(
         appBar: _customAppBar(),
@@ -122,12 +120,10 @@ class _LandingScreenState extends State<GuestScreen> {
                               ),
                             ),
                     ),
-
-                    ),
-
                   ),
                 ),
-               Padding(
+              ),
+              Padding(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 37.5,
                 ),
@@ -157,7 +153,6 @@ class _LandingScreenState extends State<GuestScreen> {
                   ),
                 ),
               ),
-
             ],
           ),
         ),
@@ -212,8 +207,8 @@ class _LandingScreenState extends State<GuestScreen> {
             top: 0,
             child: InkWell(
               onTap: () {
-                Provider.of<LocalizationProvider>(context, listen: false)
-                    .toggleLocale();
+                // Provider.of<LocalizationProvider>(context, listen: false)
+                //     .toggleLocale();
               },
               child: SizedBox(
                 width: 70,
@@ -223,31 +218,16 @@ class _LandingScreenState extends State<GuestScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Container(
-                      width: 30,
-                      height: 30,
-                      decoration: const BoxDecoration(
-                        shape: BoxShape.circle,
-                      ),
-                      clipBehavior: Clip.hardEdge,
-                      child: Consumer<LocalizationProvider>(
-                        builder: (context, provider, child) =>
-                            provider.locale.languageCode == 'id'
-                                ? Image.asset(
-                                    'assets/images/indo.png',
-                                    fit: BoxFit.fill,
-                                  )
-                                : ColorFiltered(
-                                    colorFilter: const ColorFilter.mode(
-                                      Colors.grey,
-                                      BlendMode.saturation,
-                                    ),
-                                    child: Image.asset(
-                                      'assets/images/indo.png',
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                      ),
-                    ),
+                        width: 30,
+                        height: 30,
+                        decoration: const BoxDecoration(
+                          shape: BoxShape.circle,
+                        ),
+                        clipBehavior: Clip.hardEdge,
+                        child: Image.asset(
+                          'assets/images/indo.png',
+                          fit: BoxFit.fill,
+                        )),
                     const SizedBox(
                       width: 10,
                     ),
@@ -258,24 +238,10 @@ class _LandingScreenState extends State<GuestScreen> {
                         shape: BoxShape.circle,
                       ),
                       clipBehavior: Clip.hardEdge,
-                      child: Consumer<LocalizationProvider>(
-                        builder: (context, provider, child) =>
-                            provider.locale.languageCode == 'en'
-                                ? Image.asset(
-                                    'assets/images/english.png',
-                                    fit: BoxFit.fill,
-                                  )
-                                : ColorFiltered(
-                                    colorFilter: const ColorFilter.mode(
-                                      Colors.grey,
-                                      BlendMode.saturation,
-                                    ),
-                                    child: Image.asset(
-                                      'assets/images/uk_flag.png',
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                      ),
+                      child: Image.asset(
+                        'assets/images/english.png',
+                        fit: BoxFit.fill,
+                      )
                     ),
                   ],
                 ),
